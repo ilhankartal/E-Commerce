@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Pole</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="//ico.png" type="image/png">
+</head>
+<body>
+
+    <div class="dot-spinner">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+    </div> 
+
+    <!-- HEADER-->
+    <header>
+        
+        <!-- Nav-->
+        <nav class="navbar" style="background-color: #f5f5f5 ;">
+            <!-- Navbar content -->
+          
+            <!--Kullanıcı Girişi,Kayıt-->
+            <div class="user"><a href="login.html"><i class="bi bi-person-circle"></i></a>
+                <!--Arama Kutusu-->
+            </div>
+        
+            <!--logo-->
+            <a href="index.html" id="logo" ><img src="1.png" class="logo-pole"></a>
+
+            
+            <!-- Sepet İkonu -->
+            <i class='bx bxs-shopping-bags bx-md' id="sepet-icon"></i>
+            <!--Sepet-->
+            <div class="sepet">
+                <h2 class="sepet-başlık">
+                    SEPETİM</h2>
+                    <!--Sepet İçerik-->
+                    <div class="sepet-içeriği">
+                        <div class="sepet-kutusu">
+                            <img src="12.jpg" alt="" class="sepet-img">
+                            <div class="kutu-detayları">
+                                <div class="sepet-ürün-başlığı">Siyah Sweatshirt</div>
+                                <div class="sepet-fiyat">250₺</div>
+                                <input type="number" value="1" class="sepet-sayısı">
+                            </div>
+                            <!--Sepeti Boşaltma-->
+                            <i class='bx bx-trash-alt sepet-sil'></i>
+                        </div>
+                    </div>
+                    <!--Toplam-->
+                    <div class="toplam">
+                        <div class="toplam-başlık">Toplam</div>
+                        <div class="toplam-fiyat">0₺
+                        </div>
+                    </div>
+                    <!-- Satın Al-->
+                    <button class="btn-satınal" type="button">Satın Al</button>
+                    <!--Sepeti Kapatma-->
+                    <i class="bx bx-x" id="kapat-sepet"></i>
+            </div>
+        </nav>
+            
+        </div>
+    </header>
+     
+    <!--Banner Kısmısı-->
+    <div class="banner">
+        <div class="item">
+            <img src="banner.gif" alt="" class="bannerImg">
+        </div>
+    </div>
+    <!--Banner Kısmısı-->
+
+
+
+    <!--Alışveriş Kısmısı-->
+    <section class="shop container">
+
+        <!--İçerik kısmısı-->
+        <div class="ürün-içeriği">
+            
+            <!--Ürün 1-->
+            <div class="card">
+                <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+                <div class="card-info">
+                  <p class="text-title">Sweatshirt </p>
+                  <p class="text-body">Lacivert Pole Sweatshirt</p>
+                </div>
+                <div class="card-footer">
+                <span class="text-title">279.90₺</span>
+                <div class="card-button">
+                  <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                    <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                    <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                  </svg>
+                </div>
+              </div></div>
+
+            <!--Ürün 2-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+
+            <!--Ürün 3-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+
+            <!--Ürün 4-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+
+            <!--Ürün 5-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+
+            <!--Ürün 6-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+            
+            <!--Ürün 7-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+
+            <!--Ürün 8-->
+            <div class="card">
+              <div class="card-img"><img src="12.jpg" alt="" class="ürün-img"></div>
+              <div class="card-info">
+                <p class="text-title">Sweatshirt </p>
+                <p class="text-body">Lacivert Pole Sweatshirt</p>
+              </div>
+              <div class="card-footer">
+              <span class="text-title">279.90₺</span>
+              <div class="card-button">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z"></path>
+                  <path d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z"></path>
+                  <path d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z"></path>
+                </svg>
+              </div>
+            </div></div>
+        </div>
+    </section>
+    <!--Alışveriş Kısmısı-->
+
+    <!-- Footer -->
+    <footer class="text-center text-sm-start bg-light text-muted">
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-2">
+        <!-- Grid row -->
+        <div class="row mt-1">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Pole Sport
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores tenetur ipsum id adipisci provident 
+              doloribus deserunt, quod, laboriosam eaque aut tempore. Rem nobis neque facilis, beatae rerum maxime 
+              eveniet delectus!
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i>Bursa/FSM</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              www.polesport.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i>0555 555 55 55</p>
+            <p><i class="fas fa-print me-3"></i>0555 555 55 56</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="">PoleSport</a>
+    </div>
+    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+<!-- Java Script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

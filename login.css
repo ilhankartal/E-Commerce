@@ -1,0 +1,575 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,900;1,100;1,500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import "functions";
+@import "variables";
+@import "variables-dark";
+@import "maps";
+@import "mixins";
+@import "utilities";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "containers";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "accordion";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "alert";
+@import "progress";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "offcanvas";
+@import "placeholders";
+@import "helpers";
+@import "utilities/api";
+
+
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: #171427;
+}
+i{
+    color:#171427;
+}
+:root{
+    --main-color:#ff4c29;
+    --text-color:#171427;
+    --bg-color  :#fff;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+body{
+    color: var(--text-color);
+}
+
+section{
+    padding: 4rem 0 3rem;
+    background: url('/Pictures/logrig.png');
+    background-size: cover;
+    object-fit: fill;
+}
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow:0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+header i{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.navbarr{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+}
+.container{
+    padding: 0;
+    margin: 0;
+    max-width: 1068px;
+    width: 100%;
+}
+
+.logo-pole{
+    position: relative;
+    max-width: 65px;
+    width: 60px;
+    height: auto;
+    transition: .2s;
+}
+.logo{
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+}
+#sepet-icon{
+    font-size: 1.8rem;
+    cursor:pointer;
+}
+
+
+
+
+                                        /* SEPET */
+.sepet{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: .3s;
+}
+.sepet.active{
+    right: 0;
+}
+.sepet-başlık{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.sepet-kutusu{
+    display:grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.sepet-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.kutu-detayları{
+    display:grid;
+    row-gap: .5rem;
+}
+.sepet-ürün-başlığı{
+    font-size: 1rem;
+    text-transform:uppercase;
+}
+.sepet-fiyat{
+    font-weight: 500;
+}
+.sepet-sil{
+    font-size: 24px;
+    color:var(--main-color);
+    cursor: pointer;
+}
+.toplam{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.toplam-başlık{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.toplam-fiyat{
+    margin-left: .5rem;
+}
+.btn-satınal{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-image: var(--main-color);
+    color: var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn-satınal:hover{
+    background: var(--main-color);
+}
+#kapat-sepet{
+    position: absolute;
+    top: 1rem;
+    right: .8rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.sepet-sayısı{
+    border: 1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.section-başlık{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.shop{
+    margin-top: 2rem;
+}
+                                        /* SEPET */
+
+
+
+
+
+                                        /* Login Paneli Sağ Bölüm */
+.loginContainer{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: center;
+   height: auto;
+   place-items: center;
+   background-color:#171427;
+   background-size:contain;
+   color: #fff;
+   font-family:'Poppins', sans-serif;
+   animation: background 10s infinite alternate linear;
+}
+
+@keyframes background{
+    100% {
+        background-size: 3000px 1000px;
+    }
+}
+@media (width >=500px){
+    body {padding: 0;}
+}
+.login{
+    width: 100%;
+    height: auto;
+    margin: 85px 0 0 0px;
+    padding: 30px 40px 20px;
+    border-radius: 22px;
+    background: #171427;
+    text-align: center;
+}
+@media (width>=450px) {
+    .login{width: 380px;}
+}
+.pp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 26px;
+    border:#171427 solid 3px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #157ae1, #c7a1ff);
+    padding: 2px;
+    width: 120px;
+    height: 120px;
+}
+
+.avatar > i {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:50%;
+    border: 4px solid #171427;
+}
+.login > h2{
+    font-size:36px;
+    font-weight: 500;
+    margin:0 0 4px;
+}
+.login > h3{
+    color: rgba(255,255,255,0.38);
+    margin: 0 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.login-form{
+    display: grid;
+    gap: 16px;
+    place-items:center;
+    width: 100%;
+    margin: 0;
+}
+.textbox{
+    width: 100%;
+    position: relative;
+}
+.textbox span{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+    color: rgba(255,255,255,0.38);
+}
+.login-form input,
+.login-form button{
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0;
+    font-family:'Poppins', sans-serif;
+    font: size 16px;
+    border-radius: 8px;
+}
+.login-form input{
+    background:tranparent;
+    border:2px solid rgba(255,255,255,0.1);
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+    color: #157ae1;
+}
+.login-form input:focus{
+    border-color:#157ae1;
+}
+.login-form input:focus >::placeholder{
+    opacity: 0;
+}
+.login-form input:focus ~ span{
+    color: #157ae1;
+}
+.login-form button{
+    cursor:pointer;
+    background:#157ae1;
+    color:#f9f9f9;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+.login-form button:hover{
+    transform: scale3d(1.01, 1.01, 1.01);
+}
+.login-form a{
+    color:#157ae1;
+    font-size:16px;
+    text-align: left;
+    text-decoration: none;
+}
+#pp{
+   font-size:6rem;
+}
+
+/* Loading Screen */
+.dot-spinner {
+    --uib-size: 5rem;
+    --uib-speed: .9s;
+    --uib-color: #171427;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    left: 47%;
+    background-size:cover;
+    background-position: center;
+    background-repeat:unset;
+    border: #171427 solid 5px ;
+    border-radius: 50%;
+    border-bottom:0;
+    border-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: center;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    z-index: 99;
+  }
+
+  .dot-spinner__dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .dot-spinner__dot::before {
+    content: '';
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+    background-color: var(--uib-color);
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    opacity: 0.5;
+    -webkit-animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+            animation: pulse0112 calc(var(--uib-speed) * 1.111) ease-in-out infinite;
+    -webkit-box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+            box-shadow: 0 0 20px rgba(18, 31, 53, 0.3);
+  }
+  
+  .dot-spinner__dot:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .dot-spinner__dot:nth-child(2)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.875);
+            animation-delay: calc(var(--uib-speed) * -0.875);
+  }
+  
+  .dot-spinner__dot:nth-child(3) {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  
+  .dot-spinner__dot:nth-child(3)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.75);
+            animation-delay: calc(var(--uib-speed) * -0.75);
+  }
+  
+  .dot-spinner__dot:nth-child(4) {
+    -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  
+  .dot-spinner__dot:nth-child(4)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.625);
+            animation-delay: calc(var(--uib-speed) * -0.625);
+  }
+  
+  .dot-spinner__dot:nth-child(5) {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  
+  .dot-spinner__dot:nth-child(5)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.5);
+            animation-delay: calc(var(--uib-speed) * -0.5);
+  }
+  
+  .dot-spinner__dot:nth-child(6) {
+    -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  
+  .dot-spinner__dot:nth-child(6)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.375);
+            animation-delay: calc(var(--uib-speed) * -0.375);
+  }
+  
+  .dot-spinner__dot:nth-child(7) {
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  
+  .dot-spinner__dot:nth-child(7)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.25);
+            animation-delay: calc(var(--uib-speed) * -0.25);
+  }
+  
+  .dot-spinner__dot:nth-child(8) {
+    -webkit-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+  
+  .dot-spinner__dot:nth-child(8)::before {
+    -webkit-animation-delay: calc(var(--uib-speed) * -0.125);
+            animation-delay: calc(var(--uib-speed) * -0.125);
+  }
+  
+  @-webkit-keyframes pulse0112 {
+    0%,
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0.5;
+    }
+  
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse0112 {
+    0%,
+    100% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 0.5;
+    }
+  
+    50% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+                                          /* Login Paneli Sağ Bölüm */
+
+
+  
+
+ 
+    
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: var(--bg-color);
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: var(--bg-color);
+  }
+}

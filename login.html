@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Pole'ye Giriş Yap</title>
+        <link rel="stylesheet" href="login.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="/Pictures/ico.png" type="image/png">
+</head>
+<body>
+
+
+
+    <div class="dot-spinner">
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+        <div class="dot-spinner__dot"></div>
+    </div> 
+
+      <header>
+        <!-- Nav-->
+        <nav class="navbarr" style="background-color: #f5f5f5;">
+            <!-- Navbar content -->
+          
+            <!--Kullanıcı Girişi,Kayıt-->
+            <div class="user"><a href="login.html"><i class="bi bi-person-circle"></i></a>
+                <!--Arama Kutusu-->
+            </div>
+        
+            <!--logo-->
+            <a href="index.html" id="logo" ><img src="/Pictures/1.png" class="logo-pole"></a>
+
+            
+            <!-- Sepet İkonu -->
+            <i class='bx bxs-shopping-bags bx-md' id="sepet-icon"></i>
+            <!--Sepet-->
+            <div class="sepet">
+                <h2 class="sepet-başlık">
+                    SEPETİM</h2>
+                    <!--Sepet İçerik-->
+                    <div class="sepet-içeriği">
+                        <div class="sepet-kutusu">
+                            <img src="1.jpeg" alt="" class="sepet-img">
+                            <div class="kutu-detayları">
+                                <div class="sepet-ürün-başlığı">Siyah Sweatshirt</div>
+                                <div class="sepet-fiyat">250₺</div>
+                                <input type="number" value="1" class="sepet-sayısı">
+                            </div>
+                            <!--Sepeti Boşaltma-->
+                            <i class='bx bx-trash-alt sepet-sil'></i>
+                        </div>
+                    </div>
+                    <!--Toplam-->
+                    <div class="toplam">
+                        <div class="toplam-başlık">Toplam</div>
+                        <div class="toplam-fiyat">0₺
+                        </div>
+                    </div>
+                    <!-- Satın Al-->
+                    <button class="btn-satınal" type="button">Satın Al</button>
+                    <!--Sepeti Kapatma-->
+                    <i class="bx bx-x" id="kapat-sepet"></i>
+            </div>
+        </nav>
+    </header>
+
+  
+
+<!-- Section: Design Block -->
+<section class="text-center text-md-start">
+    <style>
+      .cascading-right {
+        margin-right: -50px;
+      }
+  
+      @media (max-width: 800px) {
+        .cascading-right {
+          margin-right: 0;
+        }
+      }
+    </style>
+  
+    <!-- Jumbotron -->
+    <div class="container py-3" id="container">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card cascading-right" style="
+              background: hsla(0, 0%, 100%, 0.55);
+              backdrop-filter: blur(30px);
+              ">
+            <div class="card-body p-5 shadow-5 text-center">
+              <h2 class="fw-bold mb-5">Kayıt Ol</h2>
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline ">
+                      <input type="text" id="form3Example1" class="form-control" />
+                      <label class="form-label" for="form3Example1">İsim</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" />
+                      <label class="form-label" for="form3Example2">Soyad</label>
+                    </div>
+                  </div>
+                </div>
+  
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control" />
+                  <label class="form-label" for="form3Example3">Email</label>
+                </div>
+  
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" />
+                  <label class="form-label" for="form3Example4">Şifre</label>
+                </div>
+  
+
+  
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-dark">
+                  Kayıt Ol
+                </button>
+  
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <button type="button" class="btn btn-link btn-floating mx-1">
+                    <i class="bi bi-facebook"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1 ">
+                    <i class="bi bi-google"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1 ">
+                    <i class="bi bi-twitter"></i>
+                  </button>
+  
+                  <button type="button" class="btn btn-link btn-floating mx-1 ">
+                    <i class="bi bi-github"></i>
+                  </button>
+                </div>
+                <!-- Register buttons -->
+              </form>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-lg-6 mb-5 mb-lg-0" >
+          <img src="/Pictures/12.jpg" class="w-100 h-100 rounded-4 shadow-4"
+            alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+  <!-- Section: Design Block -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="/Js/login.js"></script>
+</body>
+</html>
